@@ -1,0 +1,7 @@
+numpy==1.18.2
+scipy==1.4.1
+scikit-learn==0.22.2-post1
+joblib
+grpcio
+grpcio-tools
+googleapis-common-protos
