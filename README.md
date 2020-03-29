@@ -5,11 +5,11 @@ Using Protocol Buffers and gRPC client-server communication to deploy a scikit-l
 
 ## Usage
 
- `conda create -n grpcenv python=3.6`
- `conda activate grpcenv`
- `cd scikit-on-gRPC/`
- `pip install -r requirements.txt`
- Open in one terminal 
- `python credit_card_prediction_server.py`
- In another terminal open 
- `python credit_card_prediction_client.py`
+- `conda create -n grpcenv python=3.6`
+- `conda activate grpcenv`
+- `cd scikit-on-gRPC/`
+- `pip install -r requirements.txt`
+- Open in one terminal 
+- `python credit_card_prediction_server.py`
+- In another terminal open 
+- `python credit_card_prediction_client.py`
