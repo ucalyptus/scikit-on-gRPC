@@ -1,0 +1,19 @@
+//Define the used version of proto:
+syntax = 'proto3';
+
+//Define a message to hold the features input by the client :
+message Features{
+    float reports     = 1 ;
+    float expenditure        = 2 ;
+    float age    = 3 ;
+    float income   = 4 ;
+}
+//Define a message to hold the predicted price :
+message Prediction{
+    float card      = 1 ;
+}
+
+//Define the service :
+service Predict{
+    rpc predict_credit_status(Features) returns (Prediction){}
+}
