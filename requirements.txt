@@ -5,3 +5,5 @@ joblib
 grpcio
 grpcio-tools
 googleapis-common-protos
+pandas==1.0.3
+xlrd==1.2.0
