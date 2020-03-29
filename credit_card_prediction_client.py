@@ -1,7 +1,8 @@
 import grpc
 from random import randint
 from timeit import default_timer as timer
-
+import pandas as pd
+import numpy as np
 # import the generated classes
 import model_pb2
 import model_pb2_grpc
@@ -16,10 +17,18 @@ channel = grpc.insecure_channel('localhost:50051')
 stub = model_pb2_grpc.PredictStub(channel)
 end_ch = timer()
 
-reports   = [randint(0,14) for i in range(0,1000)]
-expenditure = [randint(0,3100) for i in range(0,1000)]
-age    = [randint(18,85) for i in range(0,1000)]
-income = [randint(1,14) for i in range(0,1000)]
+#reports   = [randint(0,14) for i in range(0,1000)]
+#expenditure = [randint(0,3100) for i in range(0,1000)]
+#age    = [randint(18,85) for i in range(0,1000)]
+#income = [randint(1,14) for i in range(0,1000)]
+
+df = pd.read_excel('credit.xlsx')
+df = df.sample(frac=0.5, replace=True, random_state=1)
+reports = np.asarray(df.reports)
+expenditure = np.asarray(df.expenditure)
+age = np.asarray(df.age)
+income = np.asarray(df.income)
+
 
 ans_lst = []
 
