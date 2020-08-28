@@ -1,3 +1,5 @@
+![codespell](https://github.com/ucalyptus/scikit-on-gRPC/workflows/codespell/badge.svg)
+![autoblack_push](https://github.com/ucalyptus/scikit-on-gRPC/workflows/autoblack_push/badge.svg)
 # scikit-on-gRPC
 Using Protocol Buffers and gRPC client-server communication to deploy a scikit-learn joblib exported model.
 
