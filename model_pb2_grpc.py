@@ -5,15 +5,14 @@ import model_pb2 as model__pb2
 
 
 class PredictStub(object):
-    """Define the service :
-  """
+    """Define the service :"""
 
     def __init__(self, channel):
         """Constructor.
 
-    Args:
-      channel: A grpc.Channel.
-    """
+        Args:
+          channel: A grpc.Channel.
+        """
         self.predict_credit_status = channel.unary_unary(
             "/Predict/predict_credit_status",
             request_serializer=model__pb2.Features.SerializeToString,
@@ -22,8 +21,7 @@ class PredictStub(object):
 
 
 class PredictServicer(object):
-    """Define the service :
-  """
+    """Define the service :"""
 
     def predict_credit_status(self, request, context):
         # missing associated documentation comment in .proto file
