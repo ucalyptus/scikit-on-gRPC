@@ -10,5 +10,5 @@ jobs:
       - uses: actions/setup-python@v1
       - run: pip install codespell flake8
       - run: |
-          SKIP="./.*
+          SKIP="./.*"
           codespell -L ans,fo,hist,iff,secant,tim --skip=$SKIP --quiet-level=2
