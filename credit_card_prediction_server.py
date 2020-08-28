@@ -23,7 +23,7 @@ class PredictServicer(model_pb2_grpc.PredictServicer):
         return response
 
 
-# creat a grpc server :
+# create a grpc server :
 server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
 
 model_pb2_grpc.add_PredictServicer_to_server(PredictServicer(), server)
