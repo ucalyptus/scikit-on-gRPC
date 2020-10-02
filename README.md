@@ -5,6 +5,7 @@ Using Protocol Buffers and gRPC client-server communication to deploy a scikit-l
 
 ### A brief overview about Protocol Buffers
 Let us assume that we have a data which we want to be in a particular structure and we want to store it somewhere so that it can be shared. Protocol is the process to do exactly this. It helps us serialize structure data so that it can be used afterwards. The method involves an **interface description language** that describes the structure of some data and a program that generates source code from that description for generating or parsing a stream of bytes that represents the structured data.
+
 A Small Example :-
 ```
 //polyline.proto
